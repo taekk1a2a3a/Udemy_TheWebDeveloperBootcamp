@@ -5,34 +5,101 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Selectors</title>
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="more_styles.css">
 </head>
 
 <body>
     <nav>
-        <input type="text" placeholder="search">
+        <label for="search">Search</label>
+        <input type="text" placeholder="search" id="search">
+        <input type="password" placeholder="password" id="password">
         <button>Log In</button>
-        <button>Sign Up</button>
+        <button id="signup">Sign Up</button>
     </nav>
     <main>
         <h1>Popular Posts</h1>
-        <section>
+        <section class="post">
             <span>Posted by <a href="#213adas">/u/not_funny</a></span>
-            <h2>Lol look at this hilarious meme <span>funny</span></h2>
+            <h2>Lol look at this hilarious meme <span class="tag">funny</span></h2>
             <button>+Vote</button>
             <hr>
         </section>
-        <section>
+        <section class="post">
             <span>Posted by <a href="#345adas">/u/gooner4lyfe</a></span>
-            <h2>Happy birthday to the strongest defender/bodyguard in the Prem! <span>gunners</span></h2>
+            <h2>Happy birthday to the strongest defender/bodyguard in the Prem! <span class="tag">gunners</span></h2>
             <button>+Vote</button>
             <hr>
         </section>
-        <section>
+        <section class="post">
             <span>Posted by <a href="#981adas">/u/dogfan</a></span>
-            <h2>This Corgi got some good stuff from the vet. <span>dogs</span></h2>
+            <h2>This Corgi got some good stuff from the vet. <span class="tag">dogs</span></h2>
             <button>+Vote</button>
             <hr>
         </section>
+        <section class="post">
+            <span>Posted by <a href="#213adas">/u/not_funny</a></span>
+            <h2>Lol look at this hilarious meme <span class="tag">funny</span></h2>
+            <button>+Vote</button>
+            <hr>
+        </section>
+        <section class="post">
+            <span>Posted by <a href="#345adas">/u/gooner4lyfe</a></span>
+            <h2>Happy birthday to the strongest defender/bodyguard in the Prem! <span class="tag">gunners</span></h2>
+            <button>+Vote</button>
+            <hr>
+        </section>
+        <section class="post">
+            <span>Posted by <a href="#981adas">/u/dogfan</a></span>
+            <h2>This Corgi got some good stuff from the vet. <span class="tag">dogs</span></h2>
+            <button>+Vote</button>
+            <hr>
+        </section>
+        <section class="post">
+            <span>Posted by <a href="#213adas">/u/not_funny</a></span>
+            <h2>Lol look at this hilarious meme <span class="tag">funny</span></h2>
+            <button>+Vote</button>
+            <hr>
+        </section>
+        <section class="post">
+            <span>Posted by <a href="#345adas">/u/gooner4lyfe</a></span>
+            <h2>Happy birthday to the strongest defender/bodyguard in the Prem! <span class="tag">gunners</span></h2>
+            <button>+Vote</button>
+            <hr>
+        </section>
+        <section class="post">
+            <span>Posted by <a href="#981adas">/u/dogfan</a></span>
+            <h2>This Corgi got some good stuff from the vet. <span class="tag">dogs</span></h2>
+            <button>+Vote</button>
+            <hr>
+        </section>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam vel maiores ut fugiat cumque rem consectetur
+            laborum dolorem libero mollitia? Architecto non officia nulla porro sunt? Officiis exercitationem fuga eum.
+            Dolor saepe velit laboriosam neque sed quod culpa minima libero ea similique ab veniam perspiciatis hic,
+            quibusdam soluta distinctio vitae et repellat ullam fugit ipsam esse nihil! Eius, impedit cupiditate!
+            Est modi inventore repudiandae at, odit impedit. Labore pariatur corrupti repudiandae aliquam in impedit
+            quae blanditiis facilis nulla. Ipsum eveniet mollitia nisi praesentium distinctio recusandae facilis nam hic
+            et obcaecati.
+            Natus architecto unde deleniti odit earum vero illum asperiores? Ab pariatur ipsam earum aspernatur. Sunt
+            rerum deserunt cumque beatae repellendus ab, quos modi odio tempore distinctio dolore, illo numquam earum.
+            Deserunt, illo tempora ipsa aliquid aspernatur ipsam harum veniam distinctio molestiae, porro voluptates,
+            vitae quidem fugiat nisi autem sint. Vero, totam provident. Provident, qui repellendus culpa ipsa eaque
+            dignissimos incidunt!
+            Culpa, deleniti hic molestias quod impedit sequi officia debitis. At beatae dolorum sed ipsum iusto
+            temporibus saepe culpa in, dolorem nulla excepturi neque voluptatibus reiciendis quo, fugit vel! Temporibus,
+            dignissimos.
+            Ex, rem animi. Laborum, consequatur a. Harum reprehenderit placeat reiciendis doloribus consequatur ut culpa
+            ad voluptatum illum provident, odit quidem sequi voluptates repudiandae recusandae sint aliquam! In atque
+            temporibus quaerat?
+            Maxime quisquam quae ex, voluptatibus voluptatum officiis suscipit, vel tempora, voluptas est earum quo.
+            Voluptates minus numquam nam molestiae enim tempora adipisci ducimus incidunt. Fugit expedita quam
+            aspernatur nam quisquam!
+            Alias repellat quam placeat porro aliquid, obcaecati, ea est error enim quidem recusandae totam molestias
+            atque in magni a animi laboriosam illum rem? Quis dolore provident labore dicta, nisi sunt.
+            Sit molestias delectus facilis dignissimos, deleniti animi nemo sapiente expedita quo nesciunt, officia ad
+            possimus aliquid nulla blanditiis facere tempora reprehenderit? Voluptatibus nemo eveniet laborum expedita
+            repellat impedit, nisi minima.</p>
     </main>
     <footer>
         <nav>
@@ -47,10 +114,11 @@
                     <a href="#contact">Contact</a>
                 </li>
                 <li>
-                    <a href="#puppies">Puppies</a>
+                    <a href="www.google.com">Google</a>
                 </li>
             </ul>
         </nav>
+        <a href="#license">Content is available under these licenses.</a>
     </footer>
 
 </body>
